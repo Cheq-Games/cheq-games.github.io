@@ -11,47 +11,66 @@
       header{
        background-color:#212121;
        width:100%;
-       height:50px;
+       height:80px;
+      }
+      
+      .toplinks{
+        color:#cccccc;
+      }
+      
+      .toplinks:hover{
+        color:;
       }
     </style>
+    
+    <script>
+    //script for the fadein of the top links
+      $(document).ready(function(){
+        $(".toplinks").mouseenter(function(){
+          $(".toplinks").fadein("fast", 0.5 function(){
+            $(".toplinks").css("color", "#66ccff");
+          });
+        });
+      });
+    </script>
   </head>
 
   <body>
      
     <header>
     <!-- Home at the top starts-->
-      <div id="home">
-        
+      <div class="toplinks" id="home">
+        <h3 id=""></h3>
       </div>
     <!-- Home at the top ends-->
      
     <!-- Programmers at the top starts--> 
-      <div id="programmers">
+      <div class="toplinks" id="programmers">
         
       </div>
       
     <!--Programmers at the top ends -->
     
     <!--Design at the top starts -->
-      <div id="design">
+      <div class="toplinks" id="design">
         
       </div>
     <!-- Design at the top ends-->    
   
     <!--Story at the top starts -->
-      <div id="story">
+      <div class="toplinks" id="story">
         
       </div>
     <!--Story at the top ends -->
       
     <!--Audio at the top starts -->  
-      <div id="audio">
+      <div class="toplinks" id="audio">
         
       </div>
     <!--Audio at the top ends -->
     
     <!--Others at the top starts -->
-      <div id="others">
+      <div class="toplinks" id="others">
         
       </div>      
     <!-- Others at the top ends-->
