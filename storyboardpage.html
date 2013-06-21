@@ -97,6 +97,18 @@
       }
     </style>
     
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+    $("#instory").animate(function() {
+      $(this).animate({ color: "#FF0000" }, 1500);
+    },function() {
+      $(this).animate({ color: "#ffcc00" }, 1500);
+    });
+  });
+  </script>
     
   </head>
 
@@ -126,7 +138,7 @@
   
     <!--Story at the top starts -->
       <div id="story">
-        <a style="text-decoration:none; color:#ffcc00" href="storyboardpage.html"><h3 class="toplinks">Story Board</h3></a>
+        <a style="text-decoration:none; color:#000000" id="instory" href="storyboardpage.html"><h3 class="toplinks">Story Board</h3></a>
       </div>
     <!--Story at the top ends -->
       
