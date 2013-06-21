@@ -97,6 +97,18 @@
       }
     </style>
     
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+    $("#inaudio").animate(function() {
+      $(this).animate({ color: "#FF0000" }, 1000);
+    },function() {
+      $(this).animate({ color: "#ffcc00" }, 1000);
+    });
+  });
+  </script>
     
   </head>
 
@@ -132,7 +144,7 @@
       
     <!--Audio at the top starts -->  
       <div id="audio">
-        <a style="text-decoration:none; color:#ffcc00;" href="audiomakerspage.html"><h3 class="toplinks">Audio Makers</h3></a>
+        <a style="text-decoration:none; color:#ffffff;" id="inaudio" href="audiomakerspage.html"><h3 class="toplinks">Audio Makers</h3></a>
       </div>
     <!--Audio at the top ends -->
     
