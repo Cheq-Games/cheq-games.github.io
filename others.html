@@ -97,7 +97,18 @@
       }
     </style>
     
-    
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+    $("#inothers").animate(function() {
+      $(this).animate({ color: "#FF0000" }, 1500);
+    },function() {
+      $(this).animate({ color: "#ffcc00" }, 1500);
+    });
+  });
+  </script>
   </head>
 
   <body>
@@ -138,7 +149,7 @@
     
     <!--Others at the top starts -->
       <div id="others">
-        <a style="text-decoration:none; color:#ffcc00" href="others.html"><h3 class="toplinks">Others</h3></a>
+        <a style="text-decoration:none; color:#000000" id="inothers" href="others.html"><h3 class="toplinks">Others</h3></a>
       </div>      
     <!-- Others at the top ends-->
     </header>
