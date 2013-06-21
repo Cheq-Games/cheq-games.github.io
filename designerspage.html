@@ -97,7 +97,18 @@
       }
     </style>
     
-    
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+    $("#indesign").animate(function() {
+      $(this).animate({ color: "#FF0000" }, 1500);
+    },function() {
+      $(this).animate({ color: "#FFCC00" }, 1500);
+    });
+  });
+    </script>
   </head>
 
   <body>
@@ -120,7 +131,7 @@
     
     <!--Design at the top starts -->
       <div id="design">
-        <a style="text-decoration:none; color:#ffcc00" href="designerspage.html"><h3 class="toplinks">Design Team</h3></a>
+        <a style="text-decoration:none; color:#000000" id="indesign" href="designerspage.html"><h3 class="toplinks">Design Team</h3></a>
       </div>
     <!-- Design at the top ends-->    
   
