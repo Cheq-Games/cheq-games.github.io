@@ -99,16 +99,32 @@
         padding: 0 0 0 20px;
         border-radius: 10px;
       }
-      
-        footer{
+
+      footer{
         width:101%; 
         height:150px; 
         background-color:#000000; 
         position:relative; 
-        margin-top:600px; 
+        margin-top:0; 
         margin-left:-8px;
         margin-bottom: -8px
       }
+
+      .transparentoverlay{
+        background-color: #000;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+        filter: alpha(opacity=50);
+        opacity: 0.8 ;
+      }
+
+      #middle{
+        width:101%; 
+        margin-left:-8px; 
+        height:1600px; 
+        
+        
+      }
+
     </style>
     
          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
@@ -167,11 +183,36 @@
       </div>      
     <!-- Others at the top ends-->
     </header>
-    
-<div></div>
 
-<footer>
-  
-</footer>
+    <div id="middle" style="">
+        <section id="left" style="width:500px; height:700px; margin-top:50px; position:absolute; margin-left:10px;">
+          <img class="transparentoverlay" src="https://lh4.googleusercontent.com/YMl0uIMoc35KJyPszGFVjNxnAI_W8iHh57d6pDheIBU=w463-h207-p-no" style="width:500px; height:700px; border:1px solid #000000; position:absolute;">
+        </section>
+
+        <section id="mid" style="width:500px; height:700px; margin-top:50px; position:absolute; margin-left:542px">
+          <img class="transparentoverlay" src="https://lh4.googleusercontent.com/YMl0uIMoc35KJyPszGFVjNxnAI_W8iHh57d6pDheIBU=w463-h207-p-no" style="width:500px; height:700px; border:1px solid #000000; position:absolute;">
+        </section>
+
+        <section id="right" style="width:500px; height:700px; margin-top:50px; position:absolute; margin-left:1075px">
+          <img class="transparentoverlay" src="https://lh4.googleusercontent.com/YMl0uIMoc35KJyPszGFVjNxnAI_W8iHh57d6pDheIBU=w463-h207-p-no" style="width:500px; height:700px; border:1px solid #000000; position:absolute;">
+        </section>
+
+        <section id="left" style="width:500px; height:700px; margin-top:780px; position:absolute; margin-left:10px;">
+          <img class="transparentoverlay" src="https://lh4.googleusercontent.com/YMl0uIMoc35KJyPszGFVjNxnAI_W8iHh57d6pDheIBU=w463-h207-p-no" style="width:500px; height:700px; border:1px solid #000000; position:absolute;">
+        </section>
+
+        <section id="mid" style="width:500px; height:700px; margin-top:780px; position:absolute; margin-left:542px">
+          <img class="transparentoverlay" src="https://lh4.googleusercontent.com/YMl0uIMoc35KJyPszGFVjNxnAI_W8iHh57d6pDheIBU=w463-h207-p-no" style="width:500px; height:700px; border:1px solid #000000; position:absolute;">
+        </section>
+
+        <section id="right" style="width:500px; height:700px; margin-top:780px; position:absolute; margin-left:1075px">
+          <img class="transparentoverlay" src="https://lh4.googleusercontent.com/YMl0uIMoc35KJyPszGFVjNxnAI_W8iHh57d6pDheIBU=w463-h207-p-no" style="width:500px; height:700px; border:1px solid #000000; position:absolute;">
+        </section>
+    </div>
+    
+    <footer>
+
+    </footer>
+
   </body>
 </html>
